@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-color: #212529;
+    --border-color: #666;
+    --font-color: #F8F8F8;
+    --primary-color: #14BDAC;
+    --error-color: #ff0043;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    margin: 15px;
+}
+
+h2 {
+    display: block;
+    text-align: center;
+}
+
+main {
+    display: block;
+    margin: 0 auto;
+    max-width: 40rem;
+    padding: 0 1.5rem 2.5rem;
+    position: relative;
+}
+
+header {
+    padding: 1rem 0;
+}
+
+#start {
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    border: 2px solid;
+    border-radius: 25px;
+    font-weight: 700;
+    padding: 0.3rem;
+    margin: 15px auto;
+    transition: .15s;
+    font-size: 15px;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+} 
+
+#start:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+input {
+    background-color: var(--bg-color);
+    border: 2px solid var(--border-color);
+    border-radius: .5rem;
+    color: var(--font-color);
+    display: block;
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: end;
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#jogador {
+    font-size: 20px;
+    padding: 1px;
+    margin: 15px auto;
+}
+
+#gameBoard {
+    background-color: #232323;
+    display: grid;
+    grid-template-columns: 6rem 6rem 6rem;
+    grid-template-rows: 6rem 6rem 6rem;
+    gap: .5rem;
+    margin-bottom: 1.5rem;
+    max-width: 19rem;
+    margin: auto;
+}
+
+#gameBoard span {
+    background-color: #14BDAC;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+    font-size: 5rem;
+}
+
+#gameBoard span.win {
+    background-color: #25a340;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.bloco1 {
+    flex: 1 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.bloco2 {
+    flex: 1 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#icone #player1 #player2 {
+    background-color: white;
+    border:  1px solid black;
+    display: block;
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: end;
+    width: 80%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#icone {
+    background-color: var(--bg-color);
+    border: 2px solid #666;
+    color: #666;
+    border: 2px solid;
+    border-radius: .5rem;
+    padding: 15px;
+    font-size: 15px;
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    width: 15%;
+} 
